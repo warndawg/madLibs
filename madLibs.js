@@ -30,7 +30,6 @@ function grabWords() {
 	grabAdjectives();
 	grabAdverbs();
 	grabVerbs();
-	return 
 }
 
 var christmasOne = 'Every Christmas we '+ verbsArray[0] +' to a '+ adjectivesArray[0] +' tree farm far away.'+
