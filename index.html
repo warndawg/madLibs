@@ -2,40 +2,50 @@
 <html>
 <head>
 	<title>Mad Libs</title>
+	<link rel="stylesheet" type="text/css" href="madLibs.css">
 </head>
 <body>
-	<div>
-		<h1>Mad Libs</h1>
-	</div>
-	<div>
-		<label>Chooose your nouns
-			<input type="text" name="noun" id="noun">
-		</label>
-		<br>
-		<label>Choose your adjectives
-			<input type="text" name="adjectives" id="adjective">
-		</label>
-		<br>
-		<label>Choose your adverbs
-			<input type="text" name="adverbs" id="adverb">
-		</label>
-		<br>
-		<label>Choose you verb
-			<input type="text" name="adverb" id="verb">
-		</label>
-		<br>
-		<label>Story 1
-			<input type="radio" name="Story" id="storyNumberOne">	
-		</label>
-		<label> Story 2
-			<input type="radio" name="Story" id="storyNumberTwo">
-		</label>
-		<label>Story 3
-			<input type="radio" name="Story" id="storyNumberThree">
-		</label>
-		<button onclick="displayStory()">Generate Story</button>
-	</div>
-	<div id="story"></div>
+	<div id="main">
+		<div>
+			<h1>Mad Libs</h1>
+		</div>
+		<div>
+			<div id="intro">
+				<p> 
+					Create your own mad lib. You can choose up to 4 Nouns, 4 Adjectives, 4 Adverbs, and 4 Verbs. You will need to put in a comma(,) after each word to seperate each word. If your choose less then 4 words on each a random word will be generated for you or if you want to get crazy just leave it blank to generate a radome mad lib. 
+				</p>
+			</div>		
+			<label>Chooose your nouns
+				<input type="text" name="noun" id="noun">
+			</label>
+			<br>
+			<label>Choose your adjectives
+				<input type="text" name="adjectives" id="adjective">
+			</label>
+			<br>
+			<label>Choose your adverbs
+				<input type="text" name="adverbs" id="adverb">
+			</label>
+			<br>
+			<label>Choose you verbs
+				<input type="text" name="adverb" id="verb">
+			</label>
+			<br>
+			<div id="select">
+				<label>Story 1
+					<input type="radio" name="Story" id="storyNumberOne">	
+				</label>
+				<label> Story 2
+					<input type="radio" name="Story" id="storyNumberTwo">
+				</label>
+				<label>Story 3
+					<input type="radio" name="Story" id="storyNumberThree">
+				</label>
+			</div>	
+			<button onclick="displayStory()">Generate Story</button>
+		</div>
+		<div id="story"></div>
+	</div>	
 </body>
 <script type="text/javascript" src="madLibs.js"></script>	
 </html>
